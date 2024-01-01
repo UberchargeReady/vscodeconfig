@@ -20,6 +20,7 @@
 	"vim.useSystemClipboard": true,
 	"vim.smartRelativeLine": true,
 	"vim.hlsearch": true, 
+	"vim.leader": "<Space>",
 	"vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": ["j", "k"],
@@ -34,7 +35,7 @@
 		// join lines
 		{
 			"before": ["<leader>", "j"],
-			"after": ["j"]
+			"after": ["J"]
 		},
 		// move up and down
 		{
@@ -44,6 +45,15 @@
 		{
 			"before": ["K"],
 			"after": ["5", "k"]
+		},
+		// move between tabs
+		{
+			"before": ["<c-n>"],
+			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<c-m>"],
+			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move to splits
 		{
@@ -149,5 +159,4 @@
 			"commands": [":reg"]
 		},
 	],
-	"vim.leader": "<Space>",
 }
