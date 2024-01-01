@@ -109,7 +109,7 @@
 		// todo: selection
 		{
 			"before": ["<leader>", "s", "f"],
-			"after": ["v", "af"]
+			"after": ["v", "a", "f"]
 		},
 		{
 			"before": ["<leader>", "s", "a"],
