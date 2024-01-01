@@ -30,7 +30,11 @@
         // },
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
-		// MOVE
+		// join lines
+		{
+			"before": ["<leader>", "j"],
+			"after": ["j"]
+		},
 		// move up and down
 		{
 			"before": ["J"],
@@ -57,29 +61,6 @@
 			"before": ["<c-l>"],
 			"after": ["<c-w>", "l"]
 		},
-		// join lines
-		{
-			"before": ["<leader>", "j"],
-			"after": ["j"]
-		},
-		// COMMANDS
-		// close editor
-		{
-			"before": ["<leader>", "w", "w"],
-			"commands": ["workbench.action.closeActiveEditor"]
-		},
-		{
-			"before": ["<leader>", "w", "a"],
-			"commands": ["workbench.action.closeAllEditors"]
-		},
-		{
-			"before": ["<leader>", "w", "o"],
-			"commands": ["workbench.action.closeOtherEditors"]
-		},
-		{
-			"before": ["<leader>", "w", "g"],
-			"commands": ["workbench.action.closeGroup"]
-		},
 		// split editor 
 		{
 			"before": ["<leader>", "l", "h"],
@@ -97,26 +78,31 @@
 			"before": ["<leader>", "l", "l"],
 			"commands": ["workbench.action.splitEditorRight"]
 		},
+		// close editor
+		{
+			"before": ["<leader>", "w", "w"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "w", "a"],
+			"commands": ["workbench.action.closeAllEditors"]
+		},
+		{
+			"before": ["<leader>", "w", "o"],
+			"commands": ["workbench.action.closeOtherEditors"]
+		},
+		{
+			"before": ["<leader>", "w", "g"],
+			"commands": ["workbench.action.closeGroup"]
+		},
 		// todo: selection
 		{
 			"before": ["<leader>", "s", "e"],
-			"commands": ["editor.action.smartSelect.expand"]
-		},
-		{
-			"before": ["<leader>", "s", "k"],
-			"commands": ["editor.action.smartSelect.shrink"]
-		},
-		{
-			"before": ["<leader>", "s", "n"],
-			"commands": ["editor.action.smartSelect.selectToNextLine"]
-		},
-		{
-			"before": ["<leader>", "s", "p"],
-			"commands": ["editor.action.smartSelect.selectToPreviousLine"]
+			"after": ["v", "af"]
 		},
 		{
 			"before": ["<leader>", "s", "a"],
-			"commands": ["editor.action.selectAll"]
+			"after": ["gg", "v", "G"]
 		},
 		// todo: goto
 		// focus
