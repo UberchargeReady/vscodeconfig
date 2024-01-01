@@ -115,8 +115,24 @@
 			"before": ["<leader>", "s", "a"],
 			"after": ["gg", "v", "G"]
 		},
-		// todo: goto
-		// todo: refactor
+		// goto 
+		{
+			"before": ["<leader>", "g", "y"],
+			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<leader>", "g", "f"],
+			"commands": ["editor.action.revealDefinition"]
+		},
+		{
+			"before": ["<leader>", "g", "c"],
+			"commands": ["editor.action.revealDeclaration"]
+		},
+		{
+			"before": ["<leader>", "g", "i"],
+			"commands": ["editor.action.goToImplementation"]
+		},
+		// refactor - todo: add extract
 		{
 			"before": ["<leader>", "r", "r"],
 			"commands": ["editor.action.rename"]
@@ -125,7 +141,7 @@
 			"before": ["<leader>", "r", "a"],
 			"commands": ["editor.action.changeAll"]
 		},
-		// focus
+		// focus - todo: add more stuff
 		{
 			"before": ["<leader>", "f", "e"],
 			"commands": ["workbench.view.explorer"]
@@ -146,10 +162,6 @@
 		{
 			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
-		},
-		{
-			"before": ["<leader>", "t"],
-			"commands": ["workbench.action.gotoSymbol"]
 		},
 		{
 			"before": ["<leader>", "/"],
