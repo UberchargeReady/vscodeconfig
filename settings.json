@@ -1,0 +1,167 @@
+{
+	"window.zoomLevel": 1,
+	"window.autoDetectColorScheme": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "first",
+    "editor.accessibilitySupport": "off",
+    "editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+	"files.insertFinalNewline": true,
+	"files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true,
+    "git.enableSmartCommit": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+	"vim.useSystemClipboard": true,
+	"vim.smartRelativeLine": true,
+	"vim.hlsearch": true, 
+	"vim.insertModeKeyBindings": [
+		
+	],
+	"vim.insertModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": ["j", "k"],
+        //     "after": ["<ESC>"]
+        // },
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// MOVE
+		// move up and down
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		},
+		// move to splits
+		{
+			"before": ["<c-h>"],
+			"after": ["<c-w>", "h"]
+		},
+		{
+			"before": ["<c-j>"],
+			"after": ["<c-w>", "j"]
+		},
+		{
+			"before": ["<c-k>"],
+			"after": ["<c-w>", "k"]
+		},
+		{
+			"before": ["<c-l>"],
+			"after": ["<c-w>", "l"]
+		},
+		// join lines
+		{
+			"before": ["<leader>", "j"],
+			"after": ["j"]
+		},
+		// COMMANDS
+		// close editor
+		{
+			"before": ["<leader>", "w", "w"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "w", "a"],
+			"commands": ["workbench.action.closeAllEditors"]
+		},
+		{
+			"before": ["<leader>", "w", "o"],
+			"commands": ["workbench.action.closeOtherEditors"]
+		},
+		{
+			"before": ["<leader>", "w", "g"],
+			"commands": ["workbench.action.closeGroup"]
+		},
+		// split editor 
+		{
+			"before": ["<leader>", "l", "h"],
+			"commands": ["workbench.action.splitEditorLeft"]
+		},
+		{
+			"before": ["<leader>", "l", "j"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<leader>", "l", "k"],
+			"commands": ["workbench.action.splitEditorUp"]
+		},
+		{
+			"before": ["<leader>", "l", "l"],
+			"commands": ["workbench.action.splitEditorRight"]
+		},
+		// todo: selection
+		{
+			"before": ["<leader>", "s", "e"],
+			"commands": ["editor.action.smartSelect.expand"]
+		},
+		{
+			"before": ["<leader>", "s", "k"],
+			"commands": ["editor.action.smartSelect.shrink"]
+		},
+		{
+			"before": ["<leader>", "s", "n"],
+			"commands": ["editor.action.smartSelect.selectToNextLine"]
+		},
+		{
+			"before": ["<leader>", "s", "p"],
+			"commands": ["editor.action.smartSelect.selectToPreviousLine"]
+		},
+		{
+			"before": ["<leader>", "s", "a"],
+			"commands": ["editor.action.selectAll"]
+		},
+		// todo: goto
+		// focus
+		{
+			"before": ["<leader>", "f", "e"],
+			"commands": ["workbench.view.explorer"]
+		},
+		{
+			"before": ["<leader>", "f", "g"],
+			"commands": ["workbench.view.scm"]
+		},
+		{
+			"before": ["<leader>", "f", "t"],
+			"commands": ["workbench.action.terminal.toggleTerminal"]
+		},
+		{
+			"before": ["<leader>", "f", "s"],
+			"commands": ["workbench.action.terminal.searchWorkspace"]
+		},
+		// other
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<leader>", "t"],
+			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<leader>", "y"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "Y"],
+			"commands": ["editor.action.changeAll"]
+		},
+		{
+			"before": ["<leader>", "/"],
+			"commands": [":noh"]
+		},
+		{
+			"before": ["<leader>", "r"],
+			"commands": [":reg"]
+		},
+	],
+	"vim.leader": "<Space>",
+	"workbench.colorTheme": "Quiet Light",
+}
