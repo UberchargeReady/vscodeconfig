@@ -116,6 +116,15 @@
 			"after": ["gg", "v", "G"]
 		},
 		// todo: goto
+		// todo: refactor
+		{
+			"before": ["<leader>", "r", "r"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<leader>", "r", "a"],
+			"commands": ["editor.action.changeAll"]
+		},
 		// focus
 		{
 			"before": ["<leader>", "f", "e"],
@@ -143,19 +152,11 @@
 			"commands": ["workbench.action.gotoSymbol"]
 		},
 		{
-			"before": ["<leader>", "y"],
-			"commands": ["editor.action.rename"]
-		},
-		{
-			"before": ["<leader>", "Y"],
-			"commands": ["editor.action.changeAll"]
-		},
-		{
 			"before": ["<leader>", "/"],
 			"commands": [":noh"]
 		},
 		{
-			"before": ["<leader>", "r"],
+			"before": ["<leader>", "'"],
 			"commands": [":reg"]
 		},
 	],
