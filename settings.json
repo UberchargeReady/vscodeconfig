@@ -32,11 +32,7 @@
         },
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
-		// join lines
-		{
-			"before": ["<leader>", "j"],
-			"after": ["J"]
-		},
+		// Remappings
 		// move up and down
 		{
 			"before": ["J"],
@@ -72,6 +68,8 @@
 			"before": ["<c-l>"],
 			"after": ["<c-w>", "l"]
 		},
+
+		// Leader commands
 		// split editor 
 		{
 			"before": ["<leader>", "l", "h"],
@@ -125,12 +123,16 @@
 			"commands": ["editor.action.revealDefinition"]
 		},
 		{
-			"before": ["<leader>", "g", "c"],
+			"before": ["<leader>", "g", "d"],
 			"commands": ["editor.action.revealDeclaration"]
 		},
 		{
 			"before": ["<leader>", "g", "i"],
 			"commands": ["editor.action.goToImplementation"]
+		},
+		{
+			"before": ["<leader>", "g", "p"],
+			"commands": ["editor.action.goToTypeDefinition"]
 		},
 		// refactor - todo: add extract
 		{
@@ -147,6 +149,10 @@
 			"commands": ["workbench.view.explorer"]
 		},
 		{
+			"before": ["<leader>", "f", "s"],
+			"commands": ["workbench.view.search"]
+		},
+		{
 			"before": ["<leader>", "f", "g"],
 			"commands": ["workbench.view.scm"]
 		},
@@ -154,9 +160,19 @@
 			"before": ["<leader>", "f", "t"],
 			"commands": ["workbench.action.terminal.toggleTerminal"]
 		},
+		// comment
 		{
-			"before": ["<leader>", "f", "s"],
-			"commands": ["workbench.action.terminal.searchWorkspace"]
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"]
+		},
+		{
+			"before": ["<leader>", "C"],
+			"commands": ["editor.action.blockComment"]
+		},
+		// join lines
+		{
+			"before": ["<leader>", "j"],
+			"after": ["J"]
 		},
 		// other
 		{
@@ -172,4 +188,5 @@
 			"commands": [":reg"]
 		},
 	],
+	// todo: copy normal mode to visual mode keybindings
 }
