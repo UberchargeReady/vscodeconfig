@@ -161,6 +161,15 @@
 			"before": ["<leader>", "f", "t"],
 			"commands": ["workbench.action.terminal.toggleTerminal"]
 		},
+		// new
+		{
+			"before": ["<leader>", "n", "i"],
+			"commands": ["explorer.newFile"]
+		},
+		{
+			"before": ["<leader>", "n", "o"],
+			"commands": ["explorer.newFolder"]
+		},
 		// comment
 		{
 			"before": ["<leader>", "c"],
@@ -169,6 +178,11 @@
 		{
 			"before": ["<leader>", "C"],
 			"commands": ["editor.action.blockComment"]
+		},
+		// new line
+		{
+			"before": ["<leader>", "o"],
+			"after": ["o", "<ESC>"]
 		},
 		// join lines
 		{
@@ -179,6 +193,10 @@
 		// todo: version control (v)
 		// todo: focus file in explorer
 		// other
+		{
+			"before": ["<leader>", "h"],
+			"commands": ["workbench.action.togglePanel"]
+		},
 		{
 			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
