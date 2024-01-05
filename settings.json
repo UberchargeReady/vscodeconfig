@@ -51,7 +51,7 @@
 			"before": ["<c-m>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
-		// move to splits
+		// move between splits
 		{
 			"before": ["<c-h>"],
 			"after": ["<c-w>", "h"]
@@ -103,7 +103,7 @@
 		{
 			"before": ["<leader>", "w", "g"],
 			"commands": ["workbench.action.closeGroup"]
-		},
+		}, // todo: reopen closed editor
 		// todo: selection
 		{
 			"before": ["<leader>", "s", "f"],
@@ -144,6 +144,7 @@
 			"commands": ["editor.action.changeAll"]
 		},
 		// focus - todo: add more stuff
+		// todo: recent files
 		{
 			"before": ["<leader>", "f", "e"],
 			"commands": ["workbench.view.explorer"]
@@ -174,6 +175,9 @@
 			"before": ["<leader>", "j"],
 			"after": ["J"]
 		},
+		// todo: folding (z)
+		// todo: version control (v)
+		// todo: focus file in explorer
 		// other
 		{
 			"before": ["<leader>", "p"],
@@ -189,4 +193,5 @@
 		},
 	],
 	// todo: copy normal mode to visual mode keybindings
+	// todo: investigate scrolloff
 }
