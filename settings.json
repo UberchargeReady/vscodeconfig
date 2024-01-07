@@ -10,6 +10,7 @@
     "editor.tabSize": 4,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
+	"editor.cursorSurroundingLines": 5,
 	"files.insertFinalNewline": true,
 	"files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
