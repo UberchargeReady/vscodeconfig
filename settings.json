@@ -3,6 +3,7 @@
 	"window.autoDetectColorScheme": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+	"explorer.compactFolders": false,
     "editor.suggestSelection": "first",
     "editor.accessibilitySupport": "off",
     "editor.detectIndentation": false,
@@ -23,6 +24,7 @@
 	"vim.hlsearch": true, 
 	"vim.leader": "<Space>",
 	"vim.insertModeKeyBindingsNonRecursive": [
+		// exit insert mode
         {
             "before": ["j", "k"],
             "after": ["<ESC>"]
@@ -31,10 +33,32 @@
             "before": ["k", "j"],
             "after": ["<ESC>"]
         },
+		// move cursor
+		{
+			"before": ["<c-h>"],
+			"after": ["<left>"]
+		},
+		{
+			"before": ["<c-j>"],
+			"after": ["<down>"]
+		},
+		{
+			"before": ["<c-k>"],
+			"after": ["<up>"]
+		},
+		{
+			"before": ["<c-l>"],
+			"after": ["<right>"]
+		},
+		// delete character
+		{
+			"before": ["<c-n>"],
+			"after": ["<c-h>"]
+		},
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		// Remappings
-		// move up and down
+		// move up and down by x lines
 		{
 			"before": ["J"],
 			"after": ["5", "j"]
@@ -145,13 +169,16 @@
 			"commands": ["editor.action.changeAll"]
 		},
 		// focus - todo: add more stuff
-		// todo: recent files
+		{
+			"before": ["<leader>","<leader>"],
+			"commands": ["workbench.action.quickOpen"]
+		},
 		{
 			"before": ["<leader>", "f", "e"],
 			"commands": ["workbench.view.explorer"]
 		},
 		{
-			"before": ["<leader>", "f", "s"],
+			"before": ["<leader>", "f", "f"],
 			"commands": ["workbench.view.search"]
 		},
 		{
@@ -190,9 +217,26 @@
 			"before": ["<leader>", "j"],
 			"after": ["J"]
 		},
+		// file navigation (todo)
 		// todo: folding (z)
-		// todo: version control (v)
-		// todo: focus file in explorer
+		// git (todo)
+		{
+			"before": ["<leader>", "g", "r"],
+			"commands": ["git.revertSelectedRanges"]
+		},
+		{
+			"before": ["<leader>", "g", "v"],
+			"commands": ["git.viewChanges"]
+		},
+		{
+			"before": ["<leader>", "g", "h"],
+			"commands": ["git.viewFileHistory"]
+		},
+		// {
+		// 	"before": ["<leader>", "g", "c"],
+		// 	"commands": ["git.stageAllTracked", "git.commit"]
+		// },
+		// todo: focus current file in explorer
 		// other
 		{
 			"before": ["<leader>", "h"],
@@ -211,6 +255,51 @@
 			"commands": [":reg"]
 		},
 	],
-	// todo: copy normal mode to visual mode keybindings
-	// todo: investigate scrolloff
+	"vim.visualModeKeyBindingsNonRecursive": [
+		// move up and down by x lines
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		},
+		// move between tabs
+		{
+			"before": ["<c-n>"],
+			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<c-m>"],
+			"commands": ["workbench.action.previousEditorInGroup"]
+		},
+		// comment
+		{
+			"before": ["<leader>", "c"],
+			"commands": ["editor.action.commentLine"]
+		},
+		{
+			"before": ["<leader>", "C"],
+			"commands": ["editor.action.blockComment"]
+		},
+		// other
+		{
+			"before": ["<leader>", "h"],
+			"commands": ["workbench.action.togglePanel"]
+		},
+		{
+			"before": ["<leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<leader>", "/"],
+			"commands": [":noh"]
+		},
+		{
+			"before": ["<leader>", "'"],
+			"commands": [":reg"]
+		},
+	]
+	// also, think about keeping cursor centered
 }
