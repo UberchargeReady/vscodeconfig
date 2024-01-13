@@ -22,7 +22,9 @@
 	"vim.useSystemClipboard": true,
 	"vim.smartRelativeLine": true,
 	"vim.hlsearch": true, 
+	"vim.foldfix": true,
 	"vim.leader": "<Space>",
+	// INSERT MODE
 	"vim.insertModeKeyBindingsNonRecursive": [
 		// exit insert mode
         {
@@ -56,6 +58,7 @@
 			"after": ["<c-h>"]
 		},
 	],
+	// NORMAL MODE
 	"vim.normalModeKeyBindingsNonRecursive": [
 		// Remappings
 		// move up and down by x lines
@@ -218,7 +221,31 @@
 			"after": ["J"]
 		},
 		// file navigation (todo)
-		// todo: folding (z)
+		// folding
+		{
+			"before": ["<leader>", "z", "j"],
+			"commands": ["editor.fold"]
+		},
+		{
+			"before": ["<leader>", "z", "u"],
+			"commands": ["editor.unfold"]
+		},
+		{
+			"before": ["<leader>", "z", "k"],
+			"commands": ["editor.foldRecursively"]
+		},
+		{
+			"before": ["<leader>", "z", "i"],
+			"commands": ["editor.unfoldRecursively"]
+		},
+		{
+			"before": ["<leader>", "z", "l"],
+			"commands": ["editor.foldAll"]
+		},
+		{
+			"before": ["<leader>", "z", "o"],
+			"commands": ["editor.unfoldAll"]
+		},
 		// git (todo)
 		{
 			"before": ["<leader>", "g", "r"],
@@ -237,6 +264,11 @@
 		// 	"commands": ["git.stageAllTracked", "git.commit"]
 		// },
 		// todo: focus current file in explorer
+		// macros
+		{
+			"before": ["q", "j"],
+			"after": ["@", "q"]
+		},
 		// other
 		{
 			"before": ["<leader>", "h"],
@@ -255,6 +287,7 @@
 			"commands": [":reg"]
 		},
 	],
+	// VISUAL MODE
 	"vim.visualModeKeyBindingsNonRecursive": [
 		// move up and down by x lines
 		{
@@ -283,6 +316,15 @@
 			"before": ["<leader>", "C"],
 			"commands": ["editor.action.blockComment"]
 		},
+		// easy visual indentation
+		{
+			"before": [">"],
+			"after": [">", "g", "v"]
+		},
+		{
+			"before": ["<"],
+			"after": ["<", "g", "v"]
+		},
 		// other
 		{
 			"before": ["<leader>", "h"],
@@ -300,6 +342,6 @@
 			"before": ["<leader>", "'"],
 			"commands": [":reg"]
 		},
-	]
+	],
 	// also, think about keeping cursor centered
 }
