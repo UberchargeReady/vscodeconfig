@@ -61,6 +61,15 @@
 	// NORMAL MODE
 	"vim.normalModeKeyBindingsNonRecursive": [
 		// Remappings
+		// move to beginning/end of line
+		{
+			"before": ["H"],
+			"after": ["^"]
+		},
+		{
+			"before": ["L"],
+			"after": ["$"]
+		},
 		// move up and down by x lines
 		{
 			"before": ["J"],
@@ -289,6 +298,15 @@
 	],
 	// VISUAL MODE
 	"vim.visualModeKeyBindingsNonRecursive": [
+		// move to beginning/end of line
+		{
+			"before": ["H"],
+			"after": ["^"]
+		},
+		{
+			"before": ["L"],
+			"after": ["$"]
+		},
 		// move up and down by x lines
 		{
 			"before": ["J"],
