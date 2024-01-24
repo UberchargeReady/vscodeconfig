@@ -213,11 +213,11 @@
 		// comment
 		{
 			"before": ["<leader>", "c"],
-			"commands": ["editor.action.commentLine"]
+			"commands": ["editor.action.commentLine", "cursorDown"]
 		},
 		{
 			"before": ["<leader>", "C"],
-			"commands": ["editor.action.blockComment"]
+			"commands": ["editor.action.blockComment", "cursorDown"]
 		},
 		// new line
 		{

@@ -15,6 +15,28 @@
 		"command": "-editor.action.blockComment",
 		"when": "editorTextFocus && !editorReadonly"
 	},
+    {
+      "key": "ctrl+/",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "editor.action.commentLine",
+          "cursorDown"
+        ]
+      },
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "shift+alt+A",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "editor.action.blockComment",
+          "cursorDown"
+        ]
+      },
+      "when": "editorTextFocus"
+    },
 	{
 		"key": "ctrl+t",
 		"command": "-extension.vim_ctrl+t",
@@ -29,5 +51,5 @@
 		"key": "escape",
 		"command":"workbench.action.focusActiveEditorGroup",
 		"when":"!editorTextFocus"
-	}
+	},
 ]
