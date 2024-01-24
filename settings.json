@@ -229,7 +229,13 @@
 			"before": ["<leader>", "j"],
 			"after": ["J"]
 		},
+		// split lines
+		{
+			"before": ["<leader>", "k"],
+			"after": ["i", "<Enter>", "<Esc>", "k", "$"]
+		},
 		// file navigation (todo)
+		// zen mode (todo)
 		// folding
 		{
 			"before": ["<leader>", "z", "j"],
