@@ -61,6 +61,11 @@
 	// NORMAL MODE
 	"vim.normalModeKeyBindingsNonRecursive": [
 		// Remappings
+		// redo
+		{
+			"before": ["U"],
+			"after": ["<c-r>"]
+		},
 		// move to beginning/end of line
 		{
 			"before": ["H"],
