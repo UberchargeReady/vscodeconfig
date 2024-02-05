@@ -1,4 +1,6 @@
 {
+	"workbench.preferredLightColorTheme": "Quiet Light",
+	"workbench.preferredDarkColorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"window.zoomLevel": 1,
 	"window.autoDetectColorScheme": true,
     "explorer.confirmDelete": false,
