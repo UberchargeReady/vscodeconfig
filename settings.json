@@ -110,6 +110,11 @@
 			"before": ["<c-l>"],
 			"after": ["<c-w>", "l"]
 		},
+		// close active editor
+		{
+			"before": ["<c-w>"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
 
 		// Leader commands
 		// split editor 
