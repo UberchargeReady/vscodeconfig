@@ -1,4 +1,5 @@
 {
+	"workbench.colorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"workbench.preferredLightColorTheme": "Quiet Light",
 	"workbench.preferredDarkColorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"window.zoomLevel": 1,
@@ -19,6 +20,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "extensions.ignoreRecommendations": true,
     "git.enableSmartCommit": false,
+	"git.confirmSync": false,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
 	"vim.useSystemClipboard": true,
@@ -54,10 +56,15 @@
 			"before": ["<c-l>"],
 			"after": ["<right>"]
 		},
-		// delete character
+		// delete character backwards
 		{
 			"before": ["<c-n>"],
 			"after": ["<c-h>"]
+		},
+		// delete character forwards
+		{
+			"before": ["<c-m>"],
+			"after": ["<Del>"]
 		},
 	],
 	// NORMAL MODE
