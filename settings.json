@@ -21,6 +21,7 @@
     "extensions.ignoreRecommendations": true,
     "git.enableSmartCommit": false,
 	"git.confirmSync": false,
+	"git.autofetch": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
 	"vim.useSystemClipboard": true,
