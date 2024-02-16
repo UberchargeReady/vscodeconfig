@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
+	"workbench.colorTheme": "Quiet Light",
 	"workbench.preferredLightColorTheme": "Quiet Light",
 	"workbench.preferredDarkColorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"window.zoomLevel": 1,
@@ -24,6 +24,7 @@
 	"git.autofetch": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
+	"godot_tools.gdscript_lsp_server_port": 6005,
 	"vim.useSystemClipboard": true,
 	"vim.smartRelativeLine": true,
 	"vim.hlsearch": true, 
