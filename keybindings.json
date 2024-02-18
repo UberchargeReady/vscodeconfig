@@ -52,4 +52,28 @@
 		"command":"workbench.action.focusActiveEditorGroup",
 		"when":"!editorTextFocus"
 	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.nextEditorInGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+pagedown",
+		"command": "-workbench.action.nextEditorInGroup"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.previousEditorInGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+pageup",
+		"command": "-workbench.action.previousEditorInGroup"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "-editor.action.toggleTabFocusMode"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
 ]

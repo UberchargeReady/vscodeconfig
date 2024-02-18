@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Quiet Light",
+	"workbench.colorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"workbench.preferredLightColorTheme": "Quiet Light",
 	"workbench.preferredDarkColorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
 	"window.zoomLevel": 1,
@@ -22,6 +22,7 @@
     "git.enableSmartCommit": false,
 	"git.confirmSync": false,
 	"git.autofetch": true,
+	"git.allowForcePush": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
 	"godot_tools.gdscript_lsp_server_port": 6005,
