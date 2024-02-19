@@ -1,7 +1,7 @@
 {
-	"workbench.colorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
-	"workbench.preferredLightColorTheme": "Quiet Light",
-	"workbench.preferredDarkColorTheme": "Tokyo Night Horizon (Syntax, Dark+ V2)",
+	"workbench.colorTheme": "Lunar Eclipse Shadow",
+	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
+	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
 	"window.zoomLevel": 1,
 	"window.autoDetectColorScheme": true,
     "explorer.confirmDelete": false,
@@ -212,6 +212,10 @@
 			"commands": ["workbench.view.explorer"]
 		},
 		{
+			"before": ["<leader>", "f", "E"],
+			"commands": ["revealInExplorer"]
+		},
+		{
 			"before": ["<leader>", "f", "f"],
 			"commands": ["workbench.view.search"]
 		},
@@ -222,6 +226,22 @@
 		{
 			"before": ["<leader>", "f", "t"],
 			"commands": ["workbench.action.terminal.toggleTerminal"]
+		},
+		{
+			"before": ["<leader>", "f", "p"],
+			"commands": ["workbench.panel.chat.view.copilot.focus"]
+		},
+		{
+			"before": ["<leader>", "f", "x"],
+			"commands": ["workbench.view.extensions"]
+		},
+		{
+			"before": ["<leader>", "f", "d"],
+			"commands": ["workbench.view.debug"]
+		},
+		{
+			"before": ["<leader>", "f", "r"],
+			"commands": ["workbench.view.remote"]
 		},
 		// new
 		{
@@ -310,6 +330,7 @@
 			"before": ["q", "j"],
 			"after": ["@", "q"]
 		},
+		// copilot - todo
 		// other
 		{
 			"before": ["<leader>", "h"],
