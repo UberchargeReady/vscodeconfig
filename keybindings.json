@@ -53,16 +53,8 @@
 		"when":"!editorTextFocus"
 	},
 	{
-		"key": "ctrl+n",
-		"command": "workbench.action.nextEditorInGroup"
-	},
-	{
 		"key": "ctrl+k ctrl+pagedown",
 		"command": "-workbench.action.nextEditorInGroup"
-	},
-	{
-		"key": "ctrl+m",
-		"command": "workbench.action.previousEditorInGroup"
 	},
 	{
 		"key": "ctrl+k ctrl+pageup",
