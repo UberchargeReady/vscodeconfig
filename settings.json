@@ -2,6 +2,8 @@
 	"workbench.colorTheme": "Lunar Eclipse Shadow",
 	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
 	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
 	"window.zoomLevel": 1,
 	"window.autoDetectColorScheme": true,
     "explorer.confirmDelete": false,
@@ -242,6 +244,19 @@
 		{
 			"before": ["<leader>", "f", "r"],
 			"commands": ["workbench.view.remote"]
+		},
+		// window
+		{
+			"before": ["<leader>", "p", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", "p", "f"],
+			"commands": ["workbench.action.toggleFullScreen"]
+		},
+		{
+			"before": ["<leader>", "p", "z"],
+			"commands": ["workbench.action.toggleZenMode"]
 		},
 		// new
 		{
