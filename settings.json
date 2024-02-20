@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Lunar Eclipse Shadow",
+	"workbench.colorTheme": "Lunar Eclipse Light",
 	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
 	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
 	"workbench.layoutControl.enabled": false,
@@ -82,11 +82,11 @@
 		},
 		// move to beginning/end of line
 		{
-			"before": ["H"],
+			"before": ["<c-h>"],
 			"after": ["^"]
 		},
 		{
-			"before": ["L"],
+			"before": ["<c-l>"],
 			"after": ["$"]
 		},
 		// move up and down by x lines
@@ -97,6 +97,32 @@
 		{
 			"before": ["K"],
 			"after": ["5", "k"]
+		},
+		// move left and right by x characters
+		{
+			"before": ["H"],
+			"after": ["1", "0", "h"]
+		},
+		{
+			"before": ["L"],
+			"after": ["1", "0", "l"]
+		},
+		// scroll up and down
+		{
+			"before": ["<c-j>"],
+			"after": ["<c-d>"]
+		},
+		{
+			"before": ["<c-k>"],
+			"after": ["<c-u>"]
+		},
+		{
+			"before": ["<c-d>"],
+			"after": ["<c-f>"]
+		},
+		{
+			"before": ["<c-f>"],
+			"after": ["<c-b>"]
 		},
 		// move between tabs
 		{
@@ -109,19 +135,23 @@
 		},
 		// move between splits
 		{
-			"before": ["<c-h>"],
+			"before": ["<c-u>"],
+			"after": []
+		},
+		{
+			"before": ["<c-u>", "h"],
 			"after": ["<c-w>", "h"]
 		},
 		{
-			"before": ["<c-j>"],
+			"before": ["<c-u>", "j"],
 			"after": ["<c-w>", "j"]
 		},
 		{
-			"before": ["<c-k>"],
+			"before": ["<c-u>", "k"],
 			"after": ["<c-w>", "k"]
 		},
 		{
-			"before": ["<c-l>"],
+			"before": ["<c-u>", "l"],
 			"after": ["<c-w>", "l"]
 		},
 		// close active editor
@@ -352,7 +382,7 @@
 			"commands": ["workbench.action.togglePanel"]
 		},
 		{
-			"before": ["<leader>", "p"],
+			"before": ["<leader>", "t"],
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
@@ -368,11 +398,11 @@
 	"vim.visualModeKeyBindingsNonRecursive": [
 		// move to beginning/end of line
 		{
-			"before": ["H"],
+			"before": ["<c-h>"],
 			"after": ["^"]
 		},
 		{
-			"before": ["L"],
+			"before": ["<c-l>"],
 			"after": ["$"]
 		},
 		// move up and down by x lines
@@ -384,6 +414,32 @@
 			"before": ["K"],
 			"after": ["5", "k"]
 		},
+		// move left and right by x characters
+		{
+			"before": ["H"],
+			"after": ["1", "0", "h"]
+		},
+		{
+			"before": ["L"],
+			"after": ["1", "0", "l"]
+		},
+		// scroll up and down
+		{
+			"before": ["<c-j>"],
+			"after": ["<c-d>"]
+		},
+		{
+			"before": ["<c-k>"],
+			"after": ["<c-u>"]
+		},
+		{
+			"before": ["<c-d>"],
+			"after": ["<c-f>"]
+		},
+		{
+			"before": ["<c-f>"],
+			"after": ["<c-b>"]
+		},
 		// move between tabs
 		{
 			"before": ["<c-n>"],
@@ -392,6 +448,27 @@
 		{
 			"before": ["<c-m>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
+		},
+		// move between splits
+		{
+			"before": ["<c-u>"],
+			"after": []
+		},
+		{
+			"before": ["<c-u>", "h"],
+			"after": ["<c-w>", "h"]
+		},
+		{
+			"before": ["<c-u>", "j"],
+			"after": ["<c-w>", "j"]
+		},
+		{
+			"before": ["<c-u>", "k"],
+			"after": ["<c-w>", "k"]
+		},
+		{
+			"before": ["<c-u>", "l"],
+			"after": ["<c-w>", "l"]
 		},
 		// comment
 		{
@@ -417,7 +494,7 @@
 			"commands": ["workbench.action.togglePanel"]
 		},
 		{
-			"before": ["<leader>", "p"],
+			"before": ["<leader>", "t"],
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
