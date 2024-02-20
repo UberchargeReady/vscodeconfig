@@ -101,11 +101,11 @@
 		// move left and right by x words
 		{
 			"before": ["H"],
-			"after": ["5", "b"]
+			"after": ["2", "b"]
 		},
 		{
 			"before": ["L"],
-			"after": ["5", "w"]
+			"after": ["2", "w"]
 		},
 		// scroll up and down
 		{
@@ -417,11 +417,11 @@
 		// move left and right by x words
 		{
 			"before": ["H"],
-			"after": ["5", "b"]
+			"after": ["2", "b"]
 		},
 		{
 			"before": ["L"],
-			"after": ["5", "w"]
+			"after": ["2", "w"]
 		},
 		// scroll up and down
 		{
