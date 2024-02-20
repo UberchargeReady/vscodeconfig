@@ -98,14 +98,14 @@
 			"before": ["K"],
 			"after": ["5", "k"]
 		},
-		// move left and right by x characters
+		// move left and right by x words
 		{
 			"before": ["H"],
-			"after": ["1", "0", "h"]
+			"after": ["5", "b"]
 		},
 		{
 			"before": ["L"],
-			"after": ["1", "0", "l"]
+			"after": ["5", "w"]
 		},
 		// scroll up and down
 		{
@@ -414,14 +414,14 @@
 			"before": ["K"],
 			"after": ["5", "k"]
 		},
-		// move left and right by x characters
+		// move left and right by x words
 		{
 			"before": ["H"],
-			"after": ["1", "0", "h"]
+			"after": ["5", "b"]
 		},
 		{
 			"before": ["L"],
-			"after": ["1", "0", "l"]
+			"after": ["5", "w"]
 		},
 		// scroll up and down
 		{
