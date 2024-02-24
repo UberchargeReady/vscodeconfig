@@ -566,4 +566,44 @@
 		"command": "list.focusPageUp",
 		"when": "listFocus && !inputFocus"
 	},
+	{
+		"key": "alt+x",
+		"command": "toggleSearchEditorRegex",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+r",
+		"command": "-toggleSearchEditorRegex",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+x",
+		"command": "workbench.action.terminal.toggleFindRegex",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "alt+r",
+		"command": "-workbench.action.terminal.toggleFindRegex",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+	},
+	{
+		"key": "alt+x",
+		"command": "toggleFindRegex",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+r",
+		"command": "-toggleFindRegex",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+x",
+		"command": "toggleSearchRegex",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "alt+r",
+		"command": "-toggleSearchRegex",
+		"when": "searchViewletFocus"
+	},
 ]

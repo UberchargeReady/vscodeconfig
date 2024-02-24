@@ -126,11 +126,11 @@
 		},
 		// move between tabs
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-m>"],
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-n>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
@@ -442,11 +442,11 @@
 		},
 		// move between tabs
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-m>"],
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-n>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
@@ -506,5 +506,6 @@
 			"commands": [":reg"]
 		},
 	],
+	"git-graph.dialog.rebase.launchInteractiveRebase": true,
 	// also, think about keeping cursor centered
 }
