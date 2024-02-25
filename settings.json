@@ -17,6 +17,7 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
 	"editor.cursorSurroundingLines": 5,
+	"editor.stickyScroll.enabled": false,
 	"files.insertFinalNewline": true,
 	"files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
@@ -25,6 +26,7 @@
 	"git.confirmSync": false,
 	"git.autofetch": true,
 	"git.allowForcePush": true,
+	"github.copilot.editor.enableCodeActions": false,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
 	"godot_tools.gdscript_lsp_server_port": 6005,
@@ -126,11 +128,11 @@
 		},
 		// move between tabs
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-n>"],
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-m>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
@@ -442,11 +444,11 @@
 		},
 		// move between tabs
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-n>"],
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-m>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
