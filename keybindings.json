@@ -606,4 +606,27 @@
 		"command": "-toggleSearchRegex",
 		"when": "searchViewletFocus"
 	},
+	{
+		"key": "escape",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				"workbench.action.focusActiveEditorGroup",
+				"workbench.action.closeQuickOpen",
+				"workbench.action.quickchat.close",
+				"inlineChat.close",
+				"extension.vim_escape",
+			]
+		}
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.nextEditorInGroup",
+		"when": "!editorTextFocus"
+	},
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.previousEditorInGroup",
+		"when": "!editorTextFocus"
+	}
 ]

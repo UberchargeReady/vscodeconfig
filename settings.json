@@ -1,8 +1,9 @@
 {
-	"workbench.colorTheme": "Lunar Eclipse Light",
+	"workbench.colorTheme": "Lunar Eclipse Shadow",
 	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
 	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
 	"workbench.layoutControl.enabled": false,
+	"workbench.sideBar.location": "right",
 	"window.commandCenter": false,
 	"window.zoomLevel": 1,
 	"window.autoDetectColorScheme": true,
@@ -27,9 +28,16 @@
 	"git.autofetch": true,
 	"git.allowForcePush": true,
 	"github.copilot.editor.enableCodeActions": false,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-	"godot_tools.gdscript_lsp_server_port": 6005,
+	"git-graph.dialog.rebase.launchInteractiveRebase": true,
+	"godotTools.lsp.serverPort": 6005,
 	"vim.useSystemClipboard": true,
 	"vim.smartRelativeLine": true,
 	"vim.hlsearch": true, 
@@ -72,6 +80,15 @@
 		{
 			"before": ["<c-m>"],
 			"after": ["<Del>"]
+		},
+		// other
+		{
+			"before": ["<c-i>"],
+			"commands": ["editor.action.inlineSuggest.acceptNextLine"]
+		},
+		{
+			"before": ["<c-o>"],
+			"commands": ["editor.action.inlineSuggest.acceptNextWord"]
 		},
 	],
 	// NORMAL MODE
@@ -262,7 +279,7 @@
 			"commands": ["workbench.action.terminal.toggleTerminal"]
 		},
 		{
-			"before": ["<leader>", "f", "p"],
+			"before": ["<leader>", "f", "i"],
 			"commands": ["workbench.panel.chat.view.copilot.focus"]
 		},
 		{
@@ -354,35 +371,86 @@
 			"before": ["<leader>", "z", "o"],
 			"commands": ["editor.unfoldAll"]
 		},
-		// git (todo)
+		// git
+		{
+			"before": ["<leader>", "g", "s"],
+			"commands": ["git.stageAll"]
+		},
+		{
+			"before": ["<leader>", "g", "u"],
+			"commands": ["git.unstageAll"]
+		},
+		{
+			"before": ["<leader>", "g", "c"],
+			"commands": ["git.checkout"]
+		},
 		{
 			"before": ["<leader>", "g", "r"],
 			"commands": ["git.revertSelectedRanges"]
 		},
 		{
-			"before": ["<leader>", "g", "v"],
-			"commands": ["git.viewChanges"]
+			"before": ["<leader>", "g", "h"],
+			"commands": ["git.openChange"]
 		},
 		{
-			"before": ["<leader>", "g", "h"],
-			"commands": ["git.viewFileHistory"]
+			"before": ["<leader>", "g", "n"],
+			"commands": ["workbench.action.editor.nextChange"]
 		},
-		// {
-		// 	"before": ["<leader>", "g", "c"],
-		// 	"commands": ["git.stageAllTracked", "git.commit"]
-		// },
-		// todo: focus current file in explorer
+		{
+			"before": ["<leader>", "g", "m"],
+			"commands": ["workbench.action.editor.previousChange"]
+		},
 		// macros
 		{
 			"before": ["q", "j"],
 			"after": ["@", "q"]
 		},
-		// copilot - todo
-		// other
+		// copilot
 		{
-			"before": ["<leader>", "h"],
-			"commands": ["workbench.action.togglePanel"]
+			"before": ["<leader>", "i", "i"],
+			"commands": ["github.copilot.toggleCopilot"]
 		},
+		{
+			"before": ["<leader>", "i", "c"],
+			"commands": ["workbench.action.openQuickChat.copilot"]
+		},
+		{
+			"before": ["<leader>", "i", "g"],
+			"commands": ["github.copilot.interactiveEditor.generate"]
+		},
+		{
+			"before": ["<leader>", "i", "d"],
+			"commands": ["github.copilot.interactiveEditor.generateDocs"]
+		},
+		{
+			"before": ["<leader>", "i", "t"],
+			"commands": ["github.copilot.interactiveEditor.generateTests"]
+		},
+		{
+			"before": ["<leader>", "i", "e"],
+			"commands": ["github.copilot.interactiveEditor.explain"]
+		},
+		{
+			"before": ["<leader>", "i", "f"],
+			"commands": ["github.copilot.interactiveEditor.fix"]
+		},
+		// hide panels
+		{
+			"before": ["<leader>", "h", "d"],
+			"commands": ["workbench.action.closePanel"]
+		},
+		{
+			"before": ["<leader>", "h", "s"],
+			"commands": ["workbench.action.closeSidebar"]
+		},
+		{
+			"before": ["<leader>", "h", "a"],
+			"commands": [
+				"workbench.action.closePanel",
+				"workbench.action.closeSidebar",
+			]
+		},
+		// other
 		{
 			"before": ["<leader>", "t"],
 			"commands": ["workbench.action.showCommands"]
@@ -490,11 +558,52 @@
 			"before": ["<"],
 			"after": ["<", "g", "v"]
 		},
-		// other
+		// copilot
 		{
-			"before": ["<leader>", "h"],
-			"commands": ["workbench.action.togglePanel"]
+			"before": ["<leader>", "i", "i"],
+			"commands": ["github.copilot.toggleCopilot"]
 		},
+		{
+			"before": ["<leader>", "i", "c"],
+			"commands": ["workbench.action.openQuickChat.copilot"]
+		},
+		{
+			"before": ["<leader>", "i", "g"],
+			"commands": ["github.copilot.interactiveEditor.generate"]
+		},
+		{
+			"before": ["<leader>", "i", "d"],
+			"commands": ["github.copilot.interactiveEditor.generateDocs"]
+		},
+		{
+			"before": ["<leader>", "i", "t"],
+			"commands": ["github.copilot.interactiveEditor.generateTests"]
+		},
+		{
+			"before": ["<leader>", "i", "e"],
+			"commands": ["github.copilot.interactiveEditor.explain"]
+		},
+		{
+			"before": ["<leader>", "i", "f"],
+			"commands": ["github.copilot.interactiveEditor.fix"]
+		},
+		// hide panels
+		{
+			"before": ["<leader>", "h", "d"],
+			"commands": ["workbench.action.closePanel"]
+		},
+		{
+			"before": ["<leader>", "h", "s"],
+			"commands": ["workbench.action.closeSidebar"]
+		},
+		{
+			"before": ["<leader>", "h", "a"],
+			"commands": [
+				"workbench.action.closePanel",
+				"workbench.action.closeSidebar",
+			]
+		},
+		// other
 		{
 			"before": ["<leader>", "t"],
 			"commands": ["workbench.action.showCommands"]
@@ -508,6 +617,4 @@
 			"commands": [":reg"]
 		},
 	],
-	"git-graph.dialog.rebase.launchInteractiveRebase": true,
-	// also, think about keeping cursor centered
 }
