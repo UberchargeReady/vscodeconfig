@@ -1,5 +1,5 @@
 {
-	"workbench.colorTheme": "Lunar Eclipse Shadow",
+	"workbench.colorTheme": "Lunar Eclipse Light",
 	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
 	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
 	"workbench.layoutControl.enabled": false,
@@ -296,15 +296,15 @@
 		},
 		// window
 		{
-			"before": ["<leader>", "p", "s"],
+			"before": ["<leader>", "d", "s"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
-			"before": ["<leader>", "p", "f"],
+			"before": ["<leader>", "d", "f"],
 			"commands": ["workbench.action.toggleFullScreen"]
 		},
 		{
-			"before": ["<leader>", "p", "z"],
+			"before": ["<leader>", "d", "e"],
 			"commands": ["workbench.action.toggleZenMode"]
 		},
 		// new
@@ -452,7 +452,7 @@
 		},
 		// other
 		{
-			"before": ["<leader>", "t"],
+			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
@@ -605,7 +605,7 @@
 		},
 		// other
 		{
-			"before": ["<leader>", "t"],
+			"before": ["<leader>", "p"],
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
