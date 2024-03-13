@@ -296,15 +296,15 @@
 		},
 		// window
 		{
-			"before": ["<leader>", "d", "s"],
+			"before": ["<leader>", "m", "s"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
-			"before": ["<leader>", "d", "f"],
+			"before": ["<leader>", "m", "f"],
 			"commands": ["workbench.action.toggleFullScreen"]
 		},
 		{
-			"before": ["<leader>", "d", "e"],
+			"before": ["<leader>", "m", "z"],
 			"commands": ["workbench.action.toggleZenMode"]
 		},
 		// new
@@ -345,7 +345,6 @@
 			"after": ["i", "<Enter>", "<Esc>", "k", "$"]
 		},
 		// file navigation (todo)
-		// zen mode (todo)
 		// folding
 		{
 			"before": ["<leader>", "z", "j"],
@@ -389,6 +388,14 @@
 			"commands": ["git.revertSelectedRanges"]
 		},
 		{
+			"before": ["<leader>", "g", "g"],
+			"commands": ["editor.action.dirtydiff.next"]
+		},
+		{
+			"before": ["<leader>", "g", "G"],
+			"commands": ["editor.action.dirtydiff.previous"]
+		},
+		{
 			"before": ["<leader>", "g", "h"],
 			"commands": ["git.openChange"]
 		},
@@ -404,6 +411,7 @@
 			"before": ["<leader>", "g", "p"],
 			"commands": ["git.push"]
 		},
+		// debug - todo
 		// macros
 		{
 			"before": ["q", "j"],
