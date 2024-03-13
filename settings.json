@@ -400,6 +400,10 @@
 			"before": ["<leader>", "g", "m"],
 			"commands": ["workbench.action.editor.previousChange"]
 		},
+		{
+			"before": ["<leader>", "g", "p"],
+			"commands": ["git.push"]
+		},
 		// macros
 		{
 			"before": ["q", "j"],
