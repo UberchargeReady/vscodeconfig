@@ -411,6 +411,10 @@
 			"before": ["<leader>", "g", "p"],
 			"commands": ["git.push"]
 		},
+		{
+			"before": ["<leader>", "g", "l"],
+			"commands": ["git.pull"]
+		},
 		// debug - todo
 		// macros
 		{
