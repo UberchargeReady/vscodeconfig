@@ -90,6 +90,10 @@
 			"before": ["<c-o>"],
 			"commands": ["editor.action.inlineSuggest.acceptNextWord"]
 		},
+		{
+			"before": ["<c-x>"],
+			"after": ["<c-o>"]
+		},
 	],
 	// NORMAL MODE
 	"vim.normalModeKeyBindingsNonRecursive": [
