@@ -208,6 +208,10 @@
 			"commands": ["workbench.action.closeActiveEditor"]
 		},
 		{
+			"before": ["<leader>", "w", "r"],
+			"commands": ["workbench.action.reopenClosedEditor"]
+		},
+		{
 			"before": ["<leader>", "w", "a"],
 			"commands": ["workbench.action.closeAllEditors"]
 		},
@@ -218,7 +222,7 @@
 		{
 			"before": ["<leader>", "w", "g"],
 			"commands": ["workbench.action.closeGroup"]
-		}, // todo: reopen closed editor
+		},
 		// todo: selection
 		{
 			"before": ["<leader>", "s", "f"],
@@ -420,7 +424,20 @@
 			"before": ["<leader>", "g", "l"],
 			"commands": ["git.pull"]
 		},
-		// debug - todo
+		// actions
+		{
+			"before": ["<leader>", "a", "r"],
+			"commands": ["code-runner.run"]
+		},
+		{
+			"before": ["<leader>", "a", "d"],
+			"commands": ["workbench.action.debug.start"]
+		},
+		// debug
+		{
+			"before": ["<leader>", "d", "d"],
+			"commands": ["editor.debug.action.toggleBreakpoint"]
+		},
 		// macros
 		{
 			"before": ["q", "j"],
