@@ -284,6 +284,10 @@
 			"commands": ["workbench.view.scm"]
 		},
 		{
+			"before": ["<leader>", "f", "v"],
+			"commands": ["workbench.view.scm"]
+		},
+		{
 			"before": ["<leader>", "f", "t"],
 			"commands": ["workbench.action.terminal.toggleTerminal"]
 		},
@@ -379,49 +383,51 @@
 			"before": ["<leader>", "z", "o"],
 			"commands": ["editor.unfoldAll"]
 		},
-		// git
+		// version control (git)
 		{
-			"before": ["<leader>", "g", "s"],
+			"before": ["<leader>", "v", "s"],
 			"commands": ["git.stageAll"]
 		},
 		{
-			"before": ["<leader>", "g", "u"],
+			"before": ["<leader>", "v", "u"],
 			"commands": ["git.unstageAll"]
 		},
 		{
-			"before": ["<leader>", "g", "c"],
+			"before": ["<leader>", "v", "c"],
 			"commands": ["git.checkout"]
 		},
 		{
-			"before": ["<leader>", "g", "r"],
+			"before": ["<leader>", "v", "r"],
 			"commands": ["git.revertSelectedRanges"]
 		},
 		{
-			"before": ["<leader>", "g", "g"],
+			"before": ["<leader>", "v", "v"],
 			"commands": ["editor.action.dirtydiff.next"]
 		},
 		{
-			"before": ["<leader>", "g", "G"],
-			"commands": ["editor.action.dirtydiff.previous"]
-		},
-		{
-			"before": ["<leader>", "g", "h"],
+			"before": ["<leader>", "v", "h"],
 			"commands": ["git.openChange"]
 		},
 		{
-			"before": ["<leader>", "g", "n"],
-			"commands": ["workbench.action.editor.nextChange"]
+			"before": ["<leader>", "v", "n"],
+			"commands": [
+				"workbench.action.editor.nextChange",
+				"workbench.action.compareEditor.nextChange",
+			]
 		},
 		{
-			"before": ["<leader>", "g", "m"],
-			"commands": ["workbench.action.editor.previousChange"]
+			"before": ["<leader>", "v", "m"],
+			"commands": [
+				"workbench.action.editor.previousChange",
+				"workbench.action.compareEditor.previousChange",
+			]
 		},
 		{
-			"before": ["<leader>", "g", "p"],
+			"before": ["<leader>", "v", "p"],
 			"commands": ["git.push"]
 		},
 		{
-			"before": ["<leader>", "g", "l"],
+			"before": ["<leader>", "v", "l"],
 			"commands": ["git.pull"]
 		},
 		// actions
