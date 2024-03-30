@@ -20,6 +20,7 @@
     "editor.wordWrap": "on",
 	"editor.cursorSurroundingLines": 5,
 	"editor.stickyScroll.enabled": false,
+	"zenMode.hideLineNumbers": false,
 	"files.insertFinalNewline": true,
 	"files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
@@ -385,15 +386,7 @@
 		},
 		// version control (git)
 		{
-			"before": ["<leader>", "v", "s"],
-			"commands": ["git.stageAll"]
-		},
-		{
-			"before": ["<leader>", "v", "u"],
-			"commands": ["git.unstageAll"]
-		},
-		{
-			"before": ["<leader>", "v", "c"],
+			"before": ["<leader>", "v", "k"],
 			"commands": ["git.checkout"]
 		},
 		{
@@ -405,7 +398,7 @@
 			"commands": ["editor.action.dirtydiff.next"]
 		},
 		{
-			"before": ["<leader>", "v", "h"],
+			"before": ["<leader>", "v", "c"],
 			"commands": ["git.openChange"]
 		},
 		{
