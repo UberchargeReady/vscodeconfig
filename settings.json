@@ -20,6 +20,8 @@
     "editor.wordWrap": "on",
 	"editor.cursorSurroundingLines": 5,
 	"editor.stickyScroll.enabled": false,
+	"editor.lineHeight": 26,
+	"editor.fontSize": 17,
 	"zenMode.hideLineNumbers": false,
 	"files.insertFinalNewline": true,
 	"files.autoSave": "afterDelay",
