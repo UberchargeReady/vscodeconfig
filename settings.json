@@ -1,7 +1,7 @@
 {
 	"workbench.colorTheme": "Lunar Eclipse Light",
 	"workbench.preferredLightColorTheme": "Lunar Eclipse Light",
-	"workbench.preferredDarkColorTheme": "Lunar Eclipse Shadow",
+	"workbench.preferredDarkColorTheme": "Dracula",
 	"workbench.layoutControl.enabled": false,
 	"workbench.sideBar.location": "right",
 	"window.commandCenter": false,
@@ -438,6 +438,14 @@
 		{
 			"before": ["<leader>", "d", "d"],
 			"commands": ["editor.debug.action.toggleBreakpoint"]
+		},
+		{
+			"before": ["<leader>", "d", "m"],
+			"commands": ["workbench.debug.viewlet.action.removeAllBreakpoints"]
+		},
+		{
+			"before": ["<leader>", "d", "l"],
+			"commands": ["workbench.debug.viewlet.action.toggleBreakpointsActivatedAction"]
 		},
 		// macros
 		{
