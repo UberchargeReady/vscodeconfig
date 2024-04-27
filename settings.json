@@ -77,12 +77,12 @@
 		},
 		// delete character backwards
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-b>"],
 			"after": ["<c-h>"]
 		},
 		// delete character forwards
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-n>"],
 			"after": ["<Del>"]
 		},
 		// other
@@ -157,7 +157,7 @@
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-b>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
@@ -563,7 +563,7 @@
 			"commands": ["workbench.action.nextEditorInGroup"]
 		},
 		{
-			"before": ["<c-m>"],
+			"before": ["<c-b>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
 		},
 		// move between splits
