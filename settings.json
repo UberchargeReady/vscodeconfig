@@ -77,12 +77,12 @@
 		},
 		// delete character backwards
 		{
-			"before": ["<c-b>"],
+			"before": ["<c-n>"],
 			"after": ["<c-h>"]
 		},
 		// delete character forwards
 		{
-			"before": ["<c-n>"],
+			"before": ["<c-b>"],
 			"after": ["<Del>"]
 		},
 		// other
@@ -159,32 +159,6 @@
 		{
 			"before": ["<c-b>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
-		},
-		// move between splits
-		{
-			"before": ["<c-u>"],
-			"after": []
-		},
-		{
-			"before": ["<c-u>", "h"],
-			"after": ["<c-w>", "h"]
-		},
-		{
-			"before": ["<c-u>", "j"],
-			"after": ["<c-w>", "j"]
-		},
-		{
-			"before": ["<c-u>", "k"],
-			"after": ["<c-w>", "k"]
-		},
-		{
-			"before": ["<c-u>", "l"],
-			"after": ["<c-w>", "l"]
-		},
-		// close active editor
-		{
-			"before": ["<c-w>"],
-			"commands": ["workbench.action.closeActiveEditor"]
 		},
 
 		// Leader commands
@@ -565,27 +539,6 @@
 		{
 			"before": ["<c-b>"],
 			"commands": ["workbench.action.previousEditorInGroup"]
-		},
-		// move between splits
-		{
-			"before": ["<c-u>"],
-			"after": []
-		},
-		{
-			"before": ["<c-u>", "h"],
-			"after": ["<c-w>", "h"]
-		},
-		{
-			"before": ["<c-u>", "j"],
-			"after": ["<c-w>", "j"]
-		},
-		{
-			"before": ["<c-u>", "k"],
-			"after": ["<c-w>", "k"]
-		},
-		{
-			"before": ["<c-u>", "l"],
-			"after": ["<c-w>", "l"]
 		},
 		// comment
 		{
